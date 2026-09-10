@@ -1076,6 +1076,17 @@ MIDEA_DEVICES: dict[int, dict[str, dict[str, Any] | str]] = {
                 "unit": UnitOfTime.SECONDS,
                 "state_class": SensorStateClass.MEASUREMENT,
             },
+            B1Attributes.mode: {
+                "type": Platform.SENSOR,
+                "name": "Mode",
+                "icon": "mdi:chef-hat",
+            },
+            B1Attributes.target_temperature: {
+                "type": Platform.SENSOR,
+                "name": "Target Temperature",
+                "device_class": SensorDeviceClass.TEMPERATURE,
+                "unit": UnitOfTemperature.CELSIUS,
+            },
         },
     },
     0xB3: {
